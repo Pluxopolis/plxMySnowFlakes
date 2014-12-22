@@ -22,16 +22,28 @@ class plxMySnowFlakes extends plxPlugin {
 
 		# déclaration des hooks
         $this->addHook('ThemeEndHead', 'ThemeEndHead');
+        $this->addHook('ThemeEndBody', 'ThemeEndBody');
     }
 
 	/**
-	 * Méthode qui charge le javascript dans la partie <head> du site
+	 * Méthode qui charge le style
 	 *
 	 * @return	stdio
 	 * @author	Stephane F
+	 * @editor	aruhuno
 	 **/
-    public function ThemeEndHead() {
-		echo "\t".'<script type="text/javascript" src="'.PLX_PLUGINS.'plxMySnowFlakes/snowflakes.js"></script>'."\n";
+    public function ThemeEndHead() {		
+		echo "\t".'<link rel="stylesheet" href="'.PLX_PLUGINS.'plxMySnowFlakes/ressources/stylesheet.css" media="screen"/>'."\n";
+	}
+	
+	/**
+	 * Méthode qui charge le javascript
+	 *
+	 * @return	stdio
+	 * @author	aruhuno
+	 **/
+    public function ThemeEndBody() {		
+		echo "\n\t".'<script type="text/javascript" src="'.PLX_PLUGINS.'plxMySnowFlakes/snowflakes.js"></script>'."\n";
 	}
 }
 ?>

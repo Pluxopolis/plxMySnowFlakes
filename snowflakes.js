@@ -11,10 +11,10 @@ var snowmax=35
 var snowcolor=new Array("#aaaacc","#ddddff","#ccccdd","#f3f3f3","#f0ffff")
 
 // Set the fonts, that create the snowflakes. Add as many fonts as you like
-var snowtype=new Array("Times","Arial","Times","Verdana")
+var snowtype=new Array("dh_snowflakesregular")
 
 // Set the letter that creates your snowflake (recommended: * )
-var snowletter="*"
+var snowletter="a"
 
 // Set the speed of sinking (recommended values range from 0.3 to 2)
 var sinkspeed=0.7
