@@ -42,8 +42,8 @@ class plxMySnowFlakes extends plxPlugin {
 	 * @return	stdio
 	 * @author	aruhuno
 	 **/
-    public function ThemeEndHead() {		
-		echo "\t".'<script type="text/javascript" src="'.PLX_PLUGINS.'plxMySnowFlakes/snowflakes.js"></script>'."\n";
+    public function ThemeEndBody() {		
+		echo "\n\t".'<script type="text/javascript" src="'.PLX_PLUGINS.'plxMySnowFlakes/snowflakes.js"></script>'."\n";
 	}
 }
 ?>
